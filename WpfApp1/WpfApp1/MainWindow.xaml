@@ -1,0 +1,20 @@
+﻿<Window x:Class="MyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Меню" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <Button Content="Додати студента" Click="AddStudent_Click" Margin="5"/>
+            <Button Content="Грати у хрестики-нулики" Click="PlayTicTacToe_Click" Margin="5"/>
+            <Button Content="Відкрити калькулятор" Click="OpenCalculator_Click" Margin="5"/>
+            <Button Content="Інформація про розробника" Click="DeveloperInfo_Click" Margin="5"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="1"/>
+    </Grid>
+</Window>
